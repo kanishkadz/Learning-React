@@ -1,10 +1,11 @@
+import { useState } from "react"
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [color, setColor] = useState("aqua")
 
   return (
-    <>
-      
-    </>
+    <div className="w-full h-screen
+    duration-200"></div>
   )
 }
 
