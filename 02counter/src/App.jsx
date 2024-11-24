@@ -16,9 +16,10 @@ function App() {
       <h1>Chai aur React</h1>
       <h2>Counter value: {counter}</h2>
 
-      <button onClick={addValue}>Add value</button>
+      <button onClick={addValue}>Add value: {counter}</button>
       <br/>
-      <button>Remove value</button>
+      <button>Remove value: {counter}</button>
+      <p>footer: {counter}</p>
     </>
   )
 }
