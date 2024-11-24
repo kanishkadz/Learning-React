@@ -11,6 +11,7 @@ function App() {
 
   const addValue = () => {
     counter = counter + 1
+    setCounter(counter)
   }
 
   return (
