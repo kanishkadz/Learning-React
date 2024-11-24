@@ -8,7 +8,7 @@ function App() {
   let counter = 5
 
   const addValue = () => {
-    console.log("value added", Math.random);
+    console.log("value added", Math.random()); 
   }
 
   return (
@@ -16,7 +16,7 @@ function App() {
       <h1>Chai aur React</h1>
       <h2>Counter value: {counter}</h2>
 
-      <button onClick={addValue()}>Add value</button>
+      <button onClick={addValue}>Add value</button>
       <br/>
       <button>Remove value</button>
     </>
