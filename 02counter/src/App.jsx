@@ -4,13 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+
+  let counter = 5
+
+  const addValue = () => {
+    console.log("value added", Math.random);
+  }
+
   return (
     <>
       <h1>Chai aur React</h1>
-      <h2>Counter value: 5</h2>
+      <h2>Counter value: {counter}</h2>
 
-      <button>Add value</button>
-      <br></br>
+      <button onClick={addValue()}>Add value</button>
+      <br/>
       <button>Remove value</button>
     </>
   )
