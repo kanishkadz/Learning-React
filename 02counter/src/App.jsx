@@ -8,7 +8,7 @@ function App() {
   let counter = 5
 
   const addValue = () => {
-    console.log("value added", Math.random()); 
+    counter = counter + 1
   }
 
   return (
