@@ -48,6 +48,16 @@ function App() {
             onChange={(e) => {setLength(e.target.value)}}
             />
             <label>Length: {length}</label>
+            <div className='flex items-center gap-x-1'>
+              <input 
+              type='checkbox'
+              defaultChecked={numAllowed}
+              id='numberInput'
+              onChange={() => {
+                setNumAllowed((prev) => !prev);
+              }}
+              />
+            </div>
           </div>
         </div>
       </div>
