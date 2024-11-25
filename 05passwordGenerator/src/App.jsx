@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 
 function App() {
   const [length, setLength] = useState(8)
@@ -24,6 +24,10 @@ function App() {
 
   }, [length, numAllowed, charAllowed, setPassword])
 
+
+  useEffect(() => {
+    passwordGenerator()
+  }, [length, numAllowed, charAllowed, passwordGenerator])
   return (
     <>
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-800'>
@@ -32,7 +36,7 @@ function App() {
           <input type="text" 
           value={password}
           className='outline-none w-full py-1 py-3'
-          placeholder='password'
+          placeholder='Password'
           readOnly
           />
           <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>Copy</button>
