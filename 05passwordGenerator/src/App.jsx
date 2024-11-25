@@ -16,8 +16,8 @@ function App() {
 
 
     for(let i=1; i<=length; i++){
-      let char = (Math.random() * str.length + 1)
-    }
+      let char = Math.floor(Math.random() * str.length + 1)
+    } 
 
 
   }, [length, numberAllow, charAllowed, setPassword])
