@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {InputBox} from './components'
 import './App.css'
 
 function App() {
