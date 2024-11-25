@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const [length, setLength] = useState(8)
-  const [numAllowed, setNummberAllowed] = useState(false)
+  const [numAllowed, setNumAllowed] = useState(false)
   const [charAllowed, setCharAllowed] = useState(false)
   const [password, setPassword] = useState("")
 
@@ -23,11 +23,21 @@ function App() {
     setPassword(pass)
 
 
-  }, [length, numberAllow, charAllowed, setPassword])
+  }, [length, numAllowed, charAllowed, setPassword])
 
   return (
     <>
-      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 mmy-8 text-orange-500 bg-gray-500'>test</div>
+      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700'>
+        Password Generator
+        <div className='flex shadow rounded-lg overflow-hidden mb4'>
+          <input type="text" 
+          value={password}
+          className='outline-none w-full py-1 py-3'
+          placeholder='password'
+          readOnly
+          />
+        </div>
+      </div>
     </>
   )
 }
