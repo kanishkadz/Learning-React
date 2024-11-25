@@ -22,7 +22,6 @@ function InputBox({
                     {label}
                 </label>
                 <input
-                    
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number"
                     placeholder="Amount"
@@ -35,7 +34,9 @@ function InputBox({
                 <p className="text-black/40 mb-2 w-full">Currency Type</p>
                 <select
                     className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
-                    
+                    value={selectCurrency}
+                    onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
+                    disabled={currencyDisable}
                 >
                     
                         <option value="usd">
