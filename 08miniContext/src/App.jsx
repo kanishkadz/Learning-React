@@ -8,6 +8,8 @@ function App() {
   return (
     <UserContextProvider>
       <h1>React aur Chai | Kanishka</h1>
+      <Login />
+      <Profile />
     </UserContextProvider>
   )
 }
