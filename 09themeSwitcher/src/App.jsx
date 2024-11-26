@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { ThemeProvider } from './contexts/theme'
 
@@ -8,6 +8,11 @@ function App() {
   const lightTheme = () => {
     setThemeMode("light")
   }
+
+  useEffect(() => {
+    document.querySelector('html').classList.remove("light", "dark")
+    document.querySelector('html').classList.add(themeMode)
+  }, [])
 
   const darkTheme = () => {
     setThemeMode("dark")
