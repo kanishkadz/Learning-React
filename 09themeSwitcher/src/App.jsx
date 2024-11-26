@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     document.querySelector('html').classList.remove("light", "dark")
     document.querySelector('html').classList.add(themeMode)
-  }, [])
+  }, [themeMode])
 
   const darkTheme = () => {
     setThemeMode("dark")
