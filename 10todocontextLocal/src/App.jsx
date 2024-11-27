@@ -13,6 +13,10 @@ function App() {
     setTodods((prev) => prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)))
   }
 
+  const deleteTodo = (id) => {
+    setTodods((prev) => prev.filter((todo) => todo.id !== id))
+  }
+
   return (
     <TodoProvider value={{todos, addTodo, updatedTodo, deleteTodo, toggleComplete}}>
     <div className="bg-[#172842] min-h-screen py-8">
