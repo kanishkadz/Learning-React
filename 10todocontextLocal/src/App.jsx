@@ -6,7 +6,7 @@ function App() {
   const [todos, setTodods] = useState([])
 
   const addTodo = (todo) => {
-    setTodods((prev) => [...prev])
+    setTodods((prev) => [{id: Date.now(), ...todo}, ...prev])
   }
 
   return (
