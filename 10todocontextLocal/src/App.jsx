@@ -22,7 +22,7 @@ function App() {
   }
 
   useEffect(() => {
-    localStorage.getItem
+    const todos = JSON.parse(localStorage.getItem("todos"))
   }, [])
 
   return (
