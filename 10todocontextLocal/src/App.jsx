@@ -9,6 +9,10 @@ function App() {
     setTodods((prev) => [{id: Date.now(), ...todo}, ...prev])
   }
 
+  const updatedTodo = (id, todo) => {
+    setTodods((prev) => prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo)))
+  }
+
   return (
     <TodoProvider value={{todos, addTodo, updatedTodo, deleteTodo, toggleComplete}}>
     <div className="bg-[#172842] min-h-screen py-8">
