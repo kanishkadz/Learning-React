@@ -1,0 +1,3 @@
+# React Learning Repository
+
+Welcome to the **React Learning Repository** by **Kanishka Anand**! This repository is a comprehensive resource for learning and mastering React, a powerful JavaScript library for building dynamic and interactive user interfaces. Through this repository, you'll explore the fundamentals of React, including components, props, state management, hooks, and routing, as well as advanced topics like performance optimization and integrating APIs. Whether you're starting your journey with React or aiming to refine your skills, this repository is your guide to becoming proficient in React development.
